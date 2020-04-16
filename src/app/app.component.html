@@ -1,1 +1,3 @@
-<p>{{title}} app is running!  Made by {{author}}</p>
+<div class="forecast-container">
+  <app-day-forecast *ngFor="let forecast3h of datadump" [forecast]="forecast3h"></app-day-forecast>
+</div>

@@ -1,0 +1,5 @@
+<h2>{{forecast.dt_txt}}</h2>
+<p>Weather: {{forecast.weather[0].main}}</p>
+<p>Temperature: {{forecast.main.temp}}</p>
+<p>Percipitation: <span *ngIf="!forecast.rain">None</span><span *ngIf="forecast.rain">{{forecast.rain['3h']}}mm</span></p>
+<p>Wind: {{forecast.wind.speed}}m/s toward {{forecast.wind.deg}} degrees</p>
